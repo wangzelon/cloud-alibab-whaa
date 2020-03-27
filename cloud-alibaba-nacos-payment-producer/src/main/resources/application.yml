@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: nacos-payment-producer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#management:
+#  endpoint:
+#    web:
+#      exposure:
+#        include: "*"
+server:
+  port: 9001
+dubbo:
+  scan:
+    base-packages: com.whaa.cloudalibaba.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: spring-cloud://localhost

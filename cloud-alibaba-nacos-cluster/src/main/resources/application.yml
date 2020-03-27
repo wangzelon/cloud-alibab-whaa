@@ -1,0 +1,18 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: nacos-payment-cluster-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.18.0.199:1111
+    sentinel:
+      transport:
+        dashboard: localhost:8081
+        port: 8719
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"
