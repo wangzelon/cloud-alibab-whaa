@@ -1,16 +1,13 @@
 package com.whaa.cloudalibaba.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.whaa.cloudalibaba.bean.Order;
 import com.whaa.cloudalibaba.feign.AccountService;
 import com.whaa.cloudalibaba.feign.StockService;
 import com.whaa.cloudalibaba.mapper.OrderMapper;
 import com.whaa.cloudalibaba.service.OrderService;
-import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
@@ -29,6 +26,7 @@ public class OrderServiceImpl implements OrderService {
     private OrderMapper orderMapper;
 
     //    @GlobalTransactional(name = "tx_order", rollbackFor = Exception.class)
+//    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void orderService(Integer accountId, Integer productId, Integer num) {
         Order order = new Order();
