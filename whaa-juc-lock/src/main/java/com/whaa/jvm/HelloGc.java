@@ -12,6 +12,6 @@ public class HelloGc {
 //        long totalMemory = Runtime.getRuntime().totalMemory();
 //        System.out.println(maxMemory);
 //        System.out.println(totalMemory);
-        Thread.sleep(Integer.MAX_VALUE);
+//        Thread.sleep(Integer.MAX_VALUE);
     }
 }
