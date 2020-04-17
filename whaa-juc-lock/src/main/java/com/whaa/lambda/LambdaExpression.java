@@ -40,7 +40,7 @@ public class LambdaExpression {
     }
 
     /**
-     * 匿名内部类
+     * 匿名内部类1
      */
     static void test1() {
         Foo foo = new Foo() {
