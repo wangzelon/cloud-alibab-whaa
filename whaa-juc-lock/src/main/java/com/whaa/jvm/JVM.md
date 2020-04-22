@@ -44,6 +44,9 @@
   默认8:1:1
 - -XX:NewRatio 配置年轻代和老年代的比列 默认老2:新1
 - -XX:MaxTenuringThreshold 设置垃圾最大的年龄 默认15
+ 
+ -- 工具安装
+https://www.jianshu.com/p/f61a4f1f4405
       
       
   

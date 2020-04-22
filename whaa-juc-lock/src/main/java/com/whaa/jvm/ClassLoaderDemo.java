@@ -6,6 +6,7 @@ package com.whaa.jvm;
  * Extension java 扩展加载器
  * AppCloassLoader Java系统类加载器
  * java.lang.ClassLoader 继承
+ * 双亲委派机制 先从根加载器找，找到直接用然后找扩展再继续找APP
  */
 public class ClassLoaderDemo {
 
