@@ -13,7 +13,11 @@ import java.util.Stack;
  * 8种基本类型的变量+对象的引用变量+实例方法都是在函数的栈内存分配
  *  栈帧
  *  java.lang.StackOverflowError
- *
+ * GC四大算法 --》
+ *      1、引用计数法
+ *      2、复制算法
+ *      3、标记清除
+ *      4、标记压缩
  */
 public class HelloGc {
 
