@@ -11,9 +11,14 @@ public class ThreadPoolDemo {
 
 
     public static void main(String[] args) {
-//        ExecutorService threadPoll = Executors.newFixedThreadPool(5);
+        initPool();
+
+    }
+
+    private static void initPool() {
+        ExecutorService threadPoll = Executors.newFixedThreadPool(5);
 //        ExecutorService threadPoll = Executors.newSingleThreadExecutor();
-        ExecutorService threadPoll = Executors.newCachedThreadPool();
+//        ExecutorService threadPoll = Executors.newCachedThreadPool();
         try {
             for (int i = 0; i < 11; i++) {
 
@@ -27,7 +32,6 @@ public class ThreadPoolDemo {
         } finally {
             threadPoll.shutdown();
         }
-
     }
 
     /**

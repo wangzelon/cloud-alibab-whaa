@@ -19,6 +19,11 @@ public class MyThreadPool {
          * CPU密集型 CPU核心数 CPU数+1
          * IO密集型 IO密集型不是一直在执行任务 CPU数*2
          * maximumPoolSize设置 CPU核数/1-阻塞系数  阻塞系数0.8-0.9
+         * jdk自带的拒绝策略
+         *      1、AbortPolicy 直接抛异常
+         *      2、CallerRunsPolicy 任务回退到调用者
+         *      3、DiscardPolicy 直接抛弃
+         *      4、DiscardOldestPolicy 抛弃等待时间最长的
          */
         ExecutorService threadPool = new ThreadPoolExecutor(
                 7,
