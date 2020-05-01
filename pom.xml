@@ -16,6 +16,7 @@
         <module>cloud-alibaba-seata-account</module>
         <module>cloud-alibaba-seata-stock</module>
         <module>whaa-juc-lock</module>
+        <module>whaa-socket-netty</module>
     </modules>
 
     <packaging>pom</packaging>
